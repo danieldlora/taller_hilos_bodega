@@ -29,7 +29,7 @@ public class Bodega {
 
     public void descargarArticulo(int tipo) {
         if (tipo == PRIMER_TIPO) {
-            while (capacidad + VOL_UNO >= CAPACIDAD_MAXIMA)
+            while (capacidad + VOL_UNO > CAPACIDAD_MAXIMA)
                 ;
             capacidad += VOL_UNO;
             articulosTipoUno++;
@@ -37,7 +37,7 @@ public class Bodega {
         }
 
         if (tipo == SEGUNDO_TIPO) {
-            while (capacidad + VOL_DOS >= CAPACIDAD_MAXIMA) 
+            while (capacidad + VOL_DOS > CAPACIDAD_MAXIMA) 
                ;
 
             capacidad += VOL_DOS;
